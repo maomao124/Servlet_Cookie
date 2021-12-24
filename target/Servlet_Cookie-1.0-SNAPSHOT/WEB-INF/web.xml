@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         metadata-complete="false" version="4.0">
+    <!-- metadata-complete取值为true，表示关闭注解支持 -->
+    <!-- metadata-complete取值为false，表示启用注解支持 -->
+    <servlet>
+        <!--指定 Servlet 的名称-->
+        <servlet-name>RemoveCookieServlet</servlet-name>
+        <!--Servlet 的完整限定名（包名+类名）-->
+        <servlet-class>mao.servlet_cookie.RemoveCookieServlet</servlet-class>
+    </servlet>
+    <!--定义 Servlet 与 URL 之间的映射-->
+    <servlet-mapping>
+        <!-- Servlet 的名称和虚拟路径-->
+        <servlet-name>RemoveCookieServlet</servlet-name>
+        <url-pattern>/RemoveCookieServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
